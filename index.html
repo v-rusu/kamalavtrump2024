@@ -7,20 +7,36 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-    <div class="flex-grow flex items-center justify-center min-w-[440px]">
+  <div class="max-w-md w-full min-h-screen">
+    <h1 class="text-2xl font-bold my-4">
+        ABC News Debate Chatbot
+    </h1>
+    <p class="text-sm text-gray-500 mb-4">
+        A chatbot "trained" on the transcript of the ABC News debate between Kamala Harris and Donald Trump.
+        "trained" means that the chatbot is "aware" of the transcript and can answer questions about it.
+    </p>
+    <div class="flex-grow flex items-center justify-center min-w-2xl w-full">
         <iframe
         src="https://udify.app/chatbot/q9i0OloOdtWdPI1C"
-        style="width: 100%; height: 100%; min-height: 700px; min-width: 440px;"
+        style="width: 100%; height: 100%; min-height: 700px; min-width: 448px;"
         frameborder="0"
         allow="microphone">
       </iframe>
     </div>
-    <div class="p-4 text-center">
+    <div class="p-4 text-left w-full">
         <h2 class="text-lg font-semibold">About This Project</h2>
         <p class="mt-2">
-            <!-- Write your description here about how you created this -->
-            This is where you can describe the process of creating this chatbot page.
+            This project was built with the following tools:
+            <ul class="list-disc list-inside mb-2">
+                <li><a href="https://github.com/yt-dlp/yt-dlp" target="_blank">yt-dlp</a> to download the YouTube debate</li>
+                <li><a href="https://ffmpeg.org/" target="_blank">ffmpeg</a> to convert the video to mp3</li>
+                <li><a href="https://www.assemblyai.com/" target="_blank">AssemblyAI</a> to transcribe the audio with speaker detection</li>
+                <li><a href="https://dify.ai/" target="_blank">DifyAI</a> to create the chatbot</li>
+                <li>HTML hosted on GitHub Pages</li>
+            </ul>
+            Find me on <a href="https://x.com/_VladR_" target="_blank">X</a> or <a href="https://www.linkedin.com/in/vrusu/" target="_blank">LinkedIn</a>.
         </p>
     </div>
+  </div>
 </body>
 </html>
